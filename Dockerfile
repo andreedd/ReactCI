@@ -7,7 +7,7 @@ WORKDIR /app
 COPY ./package*.json ./
 RUN mkdir node_modules && npm install
 
-# Get a clean image with gatsby-cli and the pre-built node modules
+# Get a clean image with react-scripts and the pre-built node modules
 FROM node:14-alpine
 
 RUN npm install -g react-scripts && mkdir /save
